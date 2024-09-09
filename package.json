@@ -1,6 +1,6 @@
 {
   "name": "expo-music-info-2",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Expo-compatible React Native audio metadata extractor. v2",
   "main": "index.js",
   "types": "index.d.ts",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "base-64": "^1.0.0",
-    "expo-file-system": "^15.4.2"
+    "expo-file-system": "^17.0.1"
   },
   "keywords": [
     "react-native",
@@ -21,7 +21,7 @@
     "music",
     "info"
   ],
-  "author": "Antonina Stefanowska <antonina.stefanowska@gmail.com> && MehrabSp",
+  "author": "Antonina Stefanowska <antonina.stefanowska@gmail.com> && MehrabSp && HimanshuKumarDutt094",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MehrabSp/expo-music-info-2/issues"

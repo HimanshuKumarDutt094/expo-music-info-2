@@ -1,2 +1,1 @@
-import MusicInfo from './MusicInfo';
-export default MusicInfo;
+export { default as MusicInfo } from './MusicInfo';
