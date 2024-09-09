@@ -14,7 +14,10 @@ Or
 ```
 npm i --save expo-music-info-2
 ```
-
+Or
+```
+yarn add expo-music-info-2
+```
 ## Usage
 Use this module to retrieve audio metadata from file URI.
 
@@ -24,16 +27,25 @@ MusicInfo.getMusicInfoAsync(fileUri, options);
 
 Example:
 ```
-import MusicInfo from 'expo-music-info';
+import {MusicInfo} from 'expo-music-info-2';
 
-let metadata = await MusicInfo.getMusicInfoAsync('file:///storage/emulated/0/Music/far_from_love.mp3', {
-  title: true,
-  artist: true,
-  album: true,
-  genre: true,
-  picture: true  
-});
 
+const readMP3Tags = async (uri: string) => {
+  try {
+    let metadata = await MusicInfo.getMusicInfoAsync(uri, {
+      title: true,
+      artist: true,
+      album: true,
+      genre: true,
+      picture: true,
+    });
+return metadata
+  } catch (error) {
+    console.error("Error fetching MP3 files:", error as Error);
+  }
+};
+
+###use readMP3Tags() anywhere
 ```
 
 Result:
